@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+<body>
+    <div class="contenedor">
+        <button class="boton1" style="margin-right: 1220px;">
+            <a [routerLink]= "['/pageadministrador']">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16">
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                </svg>
+            </a>
+        </button>
+        <a class="users">
+            <h1 class="center">
+                Ingresos diarios
+            </h1>
+            <img class="image--cover img-responsive" src="../../assets/imagenes/usuario.png" width="50" height="50" style="margin-left: 140px;">
+            <p class="user-info" style="margin-left: 10px;">
+                <span class="header-username">Vendedor</span>
+                <a [routerLink]= "['/login']" style="font-weight: 100;">Cerrar sesion</a>
+            </p>
+        </a>
+    </div>
+
+    <cdk-virtual-scroll-viewport appendOnly itemSize="50" class="viewport" >
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+          
+            <ng-container matColumnDef="idingreso">
+              <th mat-header-cell *matHeaderCellDef> Id Ingreso </th>
+              <td mat-cell *matCellDef="let element"> {{element.idingreso}} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="fecha">
+              <th mat-header-cell *matHeaderCellDef> Fecha </th>
+              <td mat-cell *matCellDef="let element"> {{element.fecha}} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="monto">
+              <th mat-header-cell *matHeaderCellDef> Monto </th>
+              <td mat-cell *matCellDef="let element"> {{element.monto}} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="descripcion">
+              <th mat-header-cell *matHeaderCellDef> Descripcion breve </th>
+              <td mat-cell *matCellDef="let element"> {{element.descripcion}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>     
+          </table>
+      </cdk-virtual-scroll-viewport>
+      <br>
+      <div class="contenedor-botones">
+        <button id="addingreso" [routerLink]= "['/addingreso']" class="buttons" style="margin-left: 1100px;">
+            <span>Agregar ingreso</span>   
+        </button>
+      </div>
+</body>
+</html>

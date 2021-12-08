@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+}
+
+.contenedor {
+	width: 1200px;
+	margin: auto;
+	padding: 15px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 58px;
+	font-weight: 400;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+	color: #1277bb;
+	border: 5px solid #141414;
+	padding: 20px 10px;
+	display:inline-block;
+    text-align:center;
+}
+
+.contenedor-botones {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+}
+
+.boton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background: #741B47;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton.page-administrador::after {
+	content: "";
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: calc(-100% - 80px);
+	border-bottom: 80px solid #000000;
+	border-right: 80px solid transparent;
+	transition: .4s ease-in-out all;
+}
+
+.boton.page-administrador:hover::after {
+	left: 0;
+}
+
+.image--cover {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center right;
+  }
+  .users {
+    text-decoration: none;
+    color: #374457;
+	font-size: 17px;
+    font-weight: bold;
+    /* opcional: inline-block para que las cards vayan una al lado de la otra */
+    display: block;
+  }
+  /* alinear la foto y la info */
+  .image--cover,
+  .user-info {
+    vertical-align: middle;
+  }
+  /* mismo margin que la foto, inline-block para que quede a continuación */
+  .user-info {
+    display: inline-block;
+	margin: 20px 0;
+    padding: 0;
+  }
+  /* los span van block para quedar uno arriba del otro */
+  .user-info>span {
+    display: block;
+  }

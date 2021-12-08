@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Farmacia</title>
+    <link rel="stylesheet" href="login.component.css">
+  </head>
+  <body class="contenedor">
+    <form class="form-login" id="formulario">
+      <h5>Login</h5>
+      <h6>Bienvenid@</h6>
+      <div class="example-container">
+        <img src="../../assets/imagenes/usuario3.png" width="70" height="70" style="margin-left: 186px;">
+        <input id="usuario" class="controls" type="text" name="usuario" value="" placeholder="Usuario" ngModel required #input autocomplete="off" minlength="8" maxlength="13">
+      </div>
+      <div class="example-container">
+        <img src="../../assets/imagenes/candado.png" width="70" height="70" style="margin-left: 180px;">
+        <input id="contraseña" class="controls" type="password" name="contraseña" value="" placeholder="Contraseña" maxlength="10" minlength="6" required="required" ngModel>
+      </div>
+      
+      <input type="submit" id="pagevendedor" [routerLink]="['/pagevendedor']" class="buttons" value="Acceder" onclick="acceder()">
+
+      <p><a [routerLink]="['/cambiopass']">¿Olvidastes tu Contraseña?</a></p>
+    </form>
+    <div id="error"></div>
+  </body>
+  <script src="./login.component.js"></script>
+</html>

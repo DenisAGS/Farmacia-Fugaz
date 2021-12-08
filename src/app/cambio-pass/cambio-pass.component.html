@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Farmacia</title>
+    <link rel="stylesheet" href="cambio-pass.component.css">
+  </head>
+  <body class="contenedor">
+    <form class="form-pass">
+      <div>
+        <img src="../../assets/imagenes/farmacia.png" width="50" height="50" style="margin-left: 480px;">
+        <h5>Cambio de contraseña</h5>
+      </div>
+      <div style="display:block;">
+          <img src="../../assets/imagenes/usuarios.png" width="30" height="30" style="margin-left: 20px;">     
+          <label style="margin-left: 20px;"> Usuario:</label>
+          <input style="width: 300px; margin-left: 48px;" class="controls" type="text" name="usuario" value=""ngModel required="required">
+      </div>
+      <br>
+      <div style="display:block;">
+        <img src="../../assets/imagenes/candados.png" width="30" height="30">    
+        <label style="margin-left: 10px;">Nueva contraseña:</label>
+        <input style="width: 300px; margin-left: 14px;" class="controls" type="password" name="Newpass" value="" ngModel required="required">
+      </div>
+      <br>
+      <div style="display:block;">
+        <img src="../../assets/imagenes/candados.png" width="30" height="30"> 
+        <label style="margin-left: 10px;">Repetir contraseña:</label>
+        <input style="width: 300px; margin-left: 8px;" class="controls" type="password" name="contraseña" value="" ngModel required="required">
+      </div>
+      
+      <div class="contenedor-botones">
+          <button id="notipass" [routerLink]= "['/notipass']" class="buttons">
+            <span>Aceptar</span>   
+          </button>
+          <button id="login" [routerLink]= "['/login']" class="buttonCancelar">
+            <span>Cancelar</span>
+          </button>
+      </div>
+    </form>
+    <div>
+      <dialog></dialog>
+    </div>
+<!--[routerLink]= "['/pagevendedor']"-->
+  </body>
+</html>
+

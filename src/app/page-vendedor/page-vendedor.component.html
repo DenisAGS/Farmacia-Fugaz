@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="page-vendedor.component.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+    <div class="contenedor">
+        <a class="users">
+            <img src="../../assets/imagenes/farmacia.png" width="70" height="70" style="margin-right: 350px;">
+            <h1 class="center">
+                Farmacia
+            </h1>
+            <img class="image--cover img-responsive" src="../../assets/imagenes/usuario.png" width="50" height="50" style="margin-left: 300px;">
+            <p class="user-info" style="margin-left: 10px;">
+                <span class="header-username">Vendedor</span>
+                <a [routerLink]= "['/login']" style="font-weight: 100">Cerrar sesion</a>
+              </p>
+        </a>
+    </div>
+
+    <br><br><br><br><br>
+    <img src="../../assets/imagenes/punto_venta.png" width="100" height="100" style="margin-left: 300px;">
+    <img src="../../assets/imagenes/informacion.png" width="100" height="100" style="margin-left: 580px;">
+    <br><br>
+    <div class="contenedor-botones">
+        <a style="text-decoration: none;">
+            <button id="ventas" [routerLink]= "['/ventas']" class="boton page-vendedor" style="margin-left: 120px;">
+                <span>Venta</span>
+            </button>
+        </a>
+        <a style="text-decoration: none;">
+            <button class="boton page-vendedor" [routerLink]= "['/catproductos']" style="margin-left: 340px;">
+                <span>Catalogo productos</span>
+            </button>
+        </a>
+    </div>
+</body>
+</html>

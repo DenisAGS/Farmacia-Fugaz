@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+	font-size: 56px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: #1277bb;
+	border: 5px solid #141414;
+	padding: 20px 10px;
+	display:inline-block;
+  text-align:center;
+	margin-left: 200px;
+}
+
+body {
+	background: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+}
+
+.contenedor {
+	width: 1200px;
+	margin: auto;
+	padding: 30px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedor-botones {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+}
+
+.boton1{
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: none;
+	margin-right: 1250px;
+  background: #ffffff;
+}
+
+.image--cover {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center right;
+  }
+  .users {
+    text-decoration: none;
+    color: #374457;
+	font-size: 17px;
+    font-weight: bold;
+    /* opcional: inline-block para que las cards vayan una al lado de la otra */
+    display: block;
+  }
+  /* alinear la foto y la info */
+  .image--cover,
+  .user-info {
+    vertical-align: middle;
+  }
+  /* mismo margin que la foto, inline-block para que quede a continuación */
+  .user-info {
+    display: inline-block;
+	margin: 20px 0;
+    padding: 0;
+  }
+  /* los span van block para quedar uno arriba del otro */
+  .user-info>span {
+    display: block;
+  }
+
+  #imagenes img {
+    max-width: 200px;
+    padding: 20px;
+  }
+
+  #esenciales:checked ~ #imagenes .naturales, #esenciales:checked ~ #imagenes .genericos, #esenciales:checked ~ #imagenes .vitales {
+      display: none;
+  }
+  
+  #naturales:checked ~ #imagenes .esenciales, #naturales:checked ~ #imagenes .genericos, #naturales:checked ~ #imagenes .vitales {
+      display: none;
+  }
+  
+  #genericos:checked ~ #imagenes .naturales, #genericos:checked ~ #imagenes .esenciales, #genericos:checked ~ #imagenes .vitales{
+      display: none;
+  }
+
+  #vitales:checked ~ #imagenes .naturales, #vitales:checked ~ #imagenes .esenciales, #vitales:checked ~ #imagenes .genericos{
+    display: none;
+}
+
+  .contenedor1{
+    width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+  }

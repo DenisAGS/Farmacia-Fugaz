@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cat-productos.component.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+    <title>Farmacia</title>
+</head>
+<body>
+    <div class="contenedor">
+        <button class="boton1" style="margin-right: 1220px;">
+            <a [routerLink]= "['/pagevendedor']">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16">
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                </svg>
+            </a>
+        </button>
+        <a class="users">
+            <h1 class="center">
+                Catalogo de productos
+            </h1>
+            <img class="image--cover img-responsive" src="../../assets/imagenes/usuario.png" width="50" height="50" style="margin-left: 90px;">
+            <p class="user-info" style="margin-left: 10px;">
+                <span class="header-username">Vendedor</span>
+                <a [routerLink]= "['/login']" style="font-weight: 100;">Cerrar sesion</a>
+            </p>
+        </a>
+    </div>
+    <div class="contenedor1">
+        <h5 style="font-size: 20px;">Tipo:</h5><br>
+        <input type="radio" name="filtro" id="todo" for="todo" checked>Todo      
+        <input type="radio" name="filtro" id="esenciales" for="esenciales">Esenciales
+        <input type="radio" name="filtro" id="naturales" for="naturales">Naturales
+        <input type="radio" name="filtro" id="genericos" for="genericos">Genericos
+        <input type="radio" name="filtro" id="vitales" for="vitales">Vitales
+        
+        <div id="imagenes">
+            <div class="esenciales">
+                <img src="../../assets/catalogo-imagenes/imagen.png" alt="">
+                <img src="../../assets/catalogo-imagenes/unesia.webp" alt="">
+                <img src="../../assets/catalogo-imagenes/atenolol.png" alt="">
+                <img src="../../assets/catalogo-imagenes/cronadyn.png" alt="">
+                <img src="../../assets/catalogo-imagenes/picot.webp" alt="">
+                <img src="../../assets/catalogo-imagenes/Calcitriol.png" alt="" width="290px" height="250px">
+                <img src="../../assets/catalogo-imagenes/conecta.webp" alt="" width="300px" height="260px">
+                <img src="../../assets/catalogo-imagenes/laxacaps.webp" alt="" width="360px" height="200px">
+                <img src="../../assets/catalogo-imagenes/tea.webp" alt="" width="300px" height="200px">
+                <img src="../../assets/catalogo-imagenes/systane.webp" alt="" width="380px" height="260px">
+            </div><br>
+            <div class="naturales">
+                <img src="../../assets/catalogo-imagenes/immune.png" alt="">
+                <img src="../../assets/catalogo-imagenes/plus.png" alt="">
+                <img src="../../assets/catalogo-imagenes/citrate.png" alt="">
+                <img src="../../assets/catalogo-imagenes/green.png" alt="">
+                <img src="../../assets/catalogo-imagenes/prenatal.png" alt="">
+            </div>
+            <div class="genericos">
+                <img src="../../assets/catalogo-imagenes/metformina.webp" alt="">
+                <img src="../../assets/catalogo-imagenes/tiamina.webp" alt="" width="140px" height="240px">
+                <img src="../../assets/catalogo-imagenes/jarabe.webp" alt="" width="140px" height="240px">
+                <img src="../../assets/catalogo-imagenes/dionixol.webp" alt="">
+                <img src="../../assets/catalogo-imagenes/salbutamol.webp" alt="" width="140px" height="240px">
+                <img src="../../assets/catalogo-imagenes/tiamina.webp" alt="" width="140px" height="240px">
+                <img src="../../assets/catalogo-imagenes/loperamida.webp" alt="">
+                <img src="../../assets/catalogo-imagenes/glibenclamida.webp" alt="">
+                <img src="../../assets/catalogo-imagenes/metamizol.webp" alt="">
+                <img src="../../assets/catalogo-imagenes/protect.webp" alt="">
+                <img src="../../assets/catalogo-imagenes/woman.webp" alt="">
+            </div>
+            <div class="vitales">
+                <img src="../../assets/catalogo-imagenes/refresh.webp" alt="">
+                <img src="../../assets/catalogo-imagenes/scott.webp" alt="" width="150px" height="270px">
+                <img src="../../assets/catalogo-imagenes/probioticos.webp" alt="">
+                <img src="../../assets/catalogo-imagenes/lecitina.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
