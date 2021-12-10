@@ -13,6 +13,7 @@ import { NotiPassComponent } from './noti-pass/noti-pass.component';
 import { IngresosDiariosComponent } from './ingresos-diarios/ingresos-diarios.component';
 import { PageAdministradorComponent } from './page-administrador/page-administrador.component';
 import { AddIngresoComponent } from './add-ingreso/add-ingreso.component';
+import { CatBaseComponent } from './cat-base/cat-base.component';
 
 const routes: Routes = [
   {
@@ -54,6 +55,10 @@ const routes: Routes = [
   {
     path: 'addingreso',
     component: AddIngresoComponent
+  },
+  {
+    path: 'catbase',
+    component: CatBaseComponent
   }
 ];
 

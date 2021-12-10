@@ -14,8 +14,8 @@
   }
 
   .contenedor {
-	width: 1350px;
-    height: 608px;
+	width: 1236px;
+    height: 540px;
 	margin: auto;
 	padding: 23px 0;
 	display: flex;
@@ -29,7 +29,7 @@
     height: 500px;
     background: #4e4d4d;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 10px;
     box-shadow: 7px 13px 37px #000;
     padding: 20px 30px;
     border-top: 4px solid #017bab;

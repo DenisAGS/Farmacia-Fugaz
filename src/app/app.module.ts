@@ -24,6 +24,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { AddIngresoComponent } from './add-ingreso/add-ingreso.component';
+import { CatBaseComponent } from './cat-base/cat-base.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AddIngresoComponent } from './add-ingreso/add-ingreso.component';
     NotiPassComponent,
     IngresosDiariosComponent,
     PageAdministradorComponent,
-    AddIngresoComponent   
+    AddIngresoComponent,
+    CatBaseComponent   
   ],
   imports: [
     BrowserModule,

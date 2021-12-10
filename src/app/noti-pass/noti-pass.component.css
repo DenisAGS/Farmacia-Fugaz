@@ -9,11 +9,11 @@
   }
 
   .contenedor {
-	width: 1350px;
-    height: 608px;
-	margin: auto;
-	padding: 23px 0;
-	display: flex;
+    width: 1236px;
+    height: 540px;
+	  margin: auto;
+	  padding: 23px 0;
+	  display: flex;
     background-image: url('../../assets/imagenes/fondo.jpg');
     min-height: 100%;
     background-size:cover;
