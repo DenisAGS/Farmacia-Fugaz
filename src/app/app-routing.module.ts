@@ -14,6 +14,11 @@ import { IngresosDiariosComponent } from './ingresos-diarios/ingresos-diarios.co
 import { PageAdministradorComponent } from './page-administrador/page-administrador.component';
 import { AddIngresoComponent } from './add-ingreso/add-ingreso.component';
 import { CatBaseComponent } from './cat-base/cat-base.component';
+import { NotiVentaComponent } from './noti-venta/noti-venta.component';
+import { NotiAnularComponent } from './noti-anular/noti-anular.component';
+import { NotiIngresoComponent } from './noti-ingreso/noti-ingreso.component';
+import { GestionUsuarioComponent } from './gestion-usuario/gestion-usuario.component';
+import { RolUsuarioComponent } from './rol-usuario/rol-usuario.component';
 
 const routes: Routes = [
   {
@@ -59,6 +64,26 @@ const routes: Routes = [
   {
     path: 'catbase',
     component: CatBaseComponent
+  },
+  {
+    path: 'notiventa',
+    component: NotiVentaComponent
+  },
+  {
+    path: 'notianular',
+    component: NotiAnularComponent
+  },
+  {
+    path: 'notiingreso',
+    component: NotiIngresoComponent
+  },
+  {
+    path: 'gestionusuario',
+    component: GestionUsuarioComponent
+  },
+  {
+    path: 'rolusuario',
+    component: RolUsuarioComponent
   }
 ];
 

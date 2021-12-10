@@ -25,6 +25,12 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { AddIngresoComponent } from './add-ingreso/add-ingreso.component';
 import { CatBaseComponent } from './cat-base/cat-base.component';
+import { NotiVentaComponent } from './noti-venta/noti-venta.component';
+import { NotiAnularComponent } from './noti-anular/noti-anular.component';
+import { NotiIngresoComponent } from './noti-ingreso/noti-ingreso.component';
+import { RouterModule } from '@angular/router';
+import { GestionUsuarioComponent } from './gestion-usuario/gestion-usuario.component';
+import { RolUsuarioComponent } from './rol-usuario/rol-usuario.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +44,12 @@ import { CatBaseComponent } from './cat-base/cat-base.component';
     IngresosDiariosComponent,
     PageAdministradorComponent,
     AddIngresoComponent,
-    CatBaseComponent   
+    CatBaseComponent,
+    NotiVentaComponent,
+    NotiAnularComponent,
+    NotiIngresoComponent,
+    GestionUsuarioComponent,
+    RolUsuarioComponent   
   ],
   imports: [
     BrowserModule,
@@ -50,7 +61,7 @@ import { CatBaseComponent } from './cat-base/cat-base.component';
     MatIconModule,
     MatTooltipModule,
     MatDialogModule,
-    MatButtonModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

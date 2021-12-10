@@ -29,14 +29,14 @@
         <input style="width: 100px; height: 30px; margin-left: 24px;" class="controls" type="text" name="clave" value="" ngModel required="required">   
 
         <label style="margin-left: 20px;">Precio:</label>
-        <input style="width: 100px;height: 30px; margin-left: 24px;" class="controls" type="number" name="precio" value="" ngModel required="required">
+        <input style="width: 100px;height: 30px; margin-left: 24px;" class="controls" type="number" name="precio" value="" ngModel required="required" min="1">
 
         <label style="margin-left: 20px;">Unidad:</label>
-        <input style="width: 70px;height: 30px; margin-left: 24px;" class="controls" type="number" name="unidad" value="" ngModel required="required">
+        <input style="width: 70px;height: 30px; margin-left: 24px;" class="controls" type="number" name="unidad" value="" ngModel required="required" min="1">
         <label style="margin-left: 10px;">Piezas</label>
 
         <label style="margin-left: 20px;">Descripcion:</label>
-        <input style="width: 230px;height: 30px; margin-left: 24px;" class="controls" type="text" name="descripcion" value="" ngModel required="required">
+        <input style="width: 230px;height: 30px; margin-left: 24px;" class="controls" type="text" name="descripcion" value="" ngModel required="required" maxlength="20"> 
         <br><br>
         <span class="contenedor-botones" style="margin-left: 140px;">
             <button  id="notipass" class="btn-agregar">
@@ -88,10 +88,10 @@
       </div>
 
       <div class="contenedor-botones">
-        <button id="notipass" [routerLink]= "['/notipass']" class="buttons">
+        <button id="notiventa" [routerLink]= "['/notiventa']" class="buttons">
             <span>Aceptar</span>   
         </button>
-        <button id="pagevendedor" [routerLink]= "['/pagevendedor']" class="buttonCancelar">
+        <button id="btncancelar" [routerLink]= "['/notianular']" class="buttonCancelar">
             <span>Cancelar</span>
         </button>
       </div>

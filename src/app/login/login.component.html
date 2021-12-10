@@ -11,18 +11,37 @@
       <h6>Bienvenid@</h6>
       <div class="example-container">
         <img src="../../assets/imagenes/usuario3.png" width="70" height="70" style="margin-left: 186px;">
-        <input id="usuario" class="controls" type="text" name="usuario" value="" placeholder="Usuario" ngModel required #input autocomplete="off" minlength="8" maxlength="13">
+        <input id="usuario" class="controls" type="text" name="usuario" value="" required placeholder="Usuario" ngModel #input autocomplete="off" minlength="5" maxlength="10">
       </div>
       <div class="example-container">
         <img src="../../assets/imagenes/candado.png" width="70" height="70" style="margin-left: 180px;">
-        <input id="contraseña" class="controls" type="password" name="contraseña" value="" placeholder="Contraseña" maxlength="10" minlength="6" required="required" ngModel>
+        <input id="contraseña" class="controls" type="password" name="contraseña" value=""  required placeholder="Contraseña" maxlength="10" minlength="5" ngModel>
       </div>
       
-      <input type="submit" id="pagevendedor" [routerLink]="['/pagevendedor']" class="buttons" value="Acceder" onclick="acceder()">
+      <input type="submit" id="acceder" [routerLink]="['/pagevendedor']" class="buttons" value="Acceder" onclick="validarfor()">
 
       <p><a [routerLink]="['/cambiopass']">¿Olvidastes tu Contraseña?</a></p>
     </form>
-    <div id="error"></div>
+    <script>
+      function validarfor(){
+
+var usuario = document.getElementById("usuario").value; 
+var contraseña = document.getElementsByName("contraseña")[0].value;
+
+var expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+
+if ( !expr.test(usuario) ){                                                            //COMPRUEBA MAIL
+  alert("Error: La dirección de correo " + usuario + " es incorrecta.");
+  console.log(alert);
+}
+
+if ( validaVacio(usuario.value) || validaVacio(contraseña.value)) {  //COMPRUEBA CAMPOS VACIOS
+  alert("Los campos no pueden quedar vacios");
+  console.log(alert)
+}
+return true;
+}
+    </script>
   </body>
-  <script src="./login.component.js"></script>
 </html>
