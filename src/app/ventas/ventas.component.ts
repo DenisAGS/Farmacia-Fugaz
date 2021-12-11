@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 export interface ventaList {
-  clave: number;
-  descripcion: string;
-  unidad: number;
-  precio: number;
+  clave:number
+  descripcion:string
+  unidad: number
+  precio:number
 }
 
 const ELEMENT_DATA: ventaList[] = [
