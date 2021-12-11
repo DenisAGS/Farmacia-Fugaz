@@ -24,11 +24,12 @@ import { NotiRolComponent } from './noti-rol/noti-rol.component';
 import { NotiAddUsuarioComponent } from './noti-add-usuario/noti-add-usuario.component';
 import { CatUsuarioComponent } from './cat-usuario/cat-usuario.component';
 import { AddUsuarioComponent } from './add-usuario/add-usuario.component';
+import { DecisionUserComponent } from './decision-user/decision-user.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: LoginComponent
+    component: DecisionUserComponent
   },
   {
     path: 'login',

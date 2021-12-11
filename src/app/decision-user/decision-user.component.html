@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Farmacia</title>
+    <link rel="stylesheet" href="decision-user.component.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="contenedor">
+        <a class="users"><br><br>
+            <img src="../../assets/imagenes/farmacia.png" width="70" height="70" style="margin-right: 350px;">
+            <h1 class="center">
+                Farmacia
+            </h1>
+            <img class="image--cover img-responsive" src="../../assets/imagenes/usuario.png" width="50" height="50" style="margin-left: 240px;">
+            <p class="user-info" style="margin-left: 10px;">
+                <span class="header-username">Vendedor</span>
+                <a [routerLink]= "['/login']" style="font-weight: 100;">Cerrar sesion</a>
+            </p>
+        </a>
+    </div>
+
+    <form class="form-noti">
+        <h5>Desicion</h5>
+      
+        <label style="margin-left: 100px;" class="label-dis">¿Es el vendedor?</label><br><br>
+      
+      <div class="contenedor-botones">
+          <button id="no" [routerLink]= "['/pageadministrador']" class="buttonCancelar">
+            <span>No</span>   
+          </button>
+          <button id="si" [routerLink]= "['/login']" class="buttons">
+            <span>Si</span>
+          </button>
+      </div>
+    </form>
+    <div>
+      <dialog></dialog>
+    </div>
+<!--[routerLink]= "['/pagevendedor']"-->
+  </body>
+</html>

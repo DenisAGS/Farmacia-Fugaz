@@ -39,14 +39,6 @@ body {
 	gap: 40px;
 }
 
-.boton1{
-	display: block;
-	width: 50px;
-	height: 50px;
-	border: none;
-	margin-right: 1250px;
-  background: #ffffff;
-}
 
 .image--cover {
     width: 55px;
@@ -78,27 +70,6 @@ body {
   .user-info>span {
     display: block;
   }
-
-  #imagenes img {
-    max-width: 200px;
-    padding: 20px;
-  }
-
-  #esenciales:checked ~ #imagenes .naturales, #esenciales:checked ~ #imagenes .genericos, #esenciales:checked ~ #imagenes .vitales {
-      display: none;
-  }
-  
-  #naturales:checked ~ #imagenes .esenciales, #naturales:checked ~ #imagenes .genericos, #naturales:checked ~ #imagenes .vitales {
-      display: none;
-  }
-  
-  #genericos:checked ~ #imagenes .naturales, #genericos:checked ~ #imagenes .esenciales, #genericos:checked ~ #imagenes .vitales{
-      display: none;
-  }
-
-  #vitales:checked ~ #imagenes .naturales, #vitales:checked ~ #imagenes .esenciales, #vitales:checked ~ #imagenes .genericos{
-    display: none;
-}
 
   .contenedor1{
     width: 1200px;
