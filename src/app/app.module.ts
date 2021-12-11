@@ -31,6 +31,8 @@ import { NotiIngresoComponent } from './noti-ingreso/noti-ingreso.component';
 import { RouterModule } from '@angular/router';
 import { GestionUsuarioComponent } from './gestion-usuario/gestion-usuario.component';
 import { RolUsuarioComponent } from './rol-usuario/rol-usuario.component';
+import { AddRolComponent } from './add-rol/add-rol.component';
+import { NotiRolComponent } from './noti-rol/noti-rol.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,9 @@ import { RolUsuarioComponent } from './rol-usuario/rol-usuario.component';
     NotiAnularComponent,
     NotiIngresoComponent,
     GestionUsuarioComponent,
-    RolUsuarioComponent   
+    RolUsuarioComponent,
+    AddRolComponent,
+    NotiRolComponent   
   ],
   imports: [
     BrowserModule,

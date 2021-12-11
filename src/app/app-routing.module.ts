@@ -19,6 +19,8 @@ import { NotiAnularComponent } from './noti-anular/noti-anular.component';
 import { NotiIngresoComponent } from './noti-ingreso/noti-ingreso.component';
 import { GestionUsuarioComponent } from './gestion-usuario/gestion-usuario.component';
 import { RolUsuarioComponent } from './rol-usuario/rol-usuario.component';
+import { AddRolComponent } from './add-rol/add-rol.component';
+import { NotiRolComponent } from './noti-rol/noti-rol.component';
 
 const routes: Routes = [
   {
@@ -84,6 +86,14 @@ const routes: Routes = [
   {
     path: 'rolusuario',
     component: RolUsuarioComponent
+  },
+  {
+    path: 'addrol',
+    component: AddRolComponent
+  },
+  {
+    path: 'notirol',
+    component: NotiRolComponent
   }
 ];
 

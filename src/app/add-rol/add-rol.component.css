@@ -3,6 +3,19 @@
     padding: 0;
 }
 
+h1 {
+	font-size: 56px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: #1277bb;
+	border: 5px solid #141414;
+	padding: 20px 10px;
+	display:inline-block;
+  text-align:center;
+	margin-left: 190px;
+}
+
 body {
 	background: #f2f2f2;
 	font-family: 'Roboto', sans-serif;
@@ -12,24 +25,11 @@ body {
 .contenedor {
 	width: 1200px;
 	margin: auto;
-	padding: 15px 0;
+	padding: 20px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-}
-
-h1 {
-	font-size: 58px;
-	font-weight: 400;
-	margin-bottom: 0px;
-	text-transform: uppercase;
-	color: #1277bb;
-	border: 5px solid #141414;
-	padding: 20px 10px;
-	display:inline-block;
-    text-align:center;
-    margin-left: 280px;
 }
 
 .contenedor-botones {
@@ -39,31 +39,21 @@ h1 {
 	gap: 40px;
 }
 
-.boton {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 80px;
-	background: #0594ad;
-	color: #fff;
-	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	font-weight: 500;
-	border: none;
-	cursor: pointer;
-	text-transform: uppercase;
-	transition: .3s ease all;
-	border-radius: 5px;
-	position: relative;
-	overflow: hidden;
-}
-
-.boton span {
-	position: relative;
-	z-index: 2;
-	transition: .3s ease all;
-}
+.buttonCancelar {
+    width: 40%;
+    height: 40px;
+    background: #c23b5c;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+    display: grid;
+    cursor: pointer;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: inline-block;
+    margin-left: 86px;
+  }
 
 .boton1{
 	display: block;
@@ -71,23 +61,6 @@ h1 {
 	height: 50px;
 	border: none;
 	margin-right: 1250px;
-    background: #f2f2f2;
-}
-
-.boton.page-administrador::after {
-	content: "";
-	width: 100%;
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: calc(-100% - 80px);
-	border-bottom: 80px solid #000000;
-	border-right: 80px solid transparent;
-	transition: .4s ease-in-out all;
-}
-
-.boton.page-administrador:hover::after {
-	left: 0;
 }
 
 .image--cover {
@@ -119,4 +92,42 @@ h1 {
   /* los span van block para quedar uno arriba del otro */
   .user-info>span {
     display: block;
+  }
+
+  table {
+    width: 100%;
+  } 
+
+  .pointer{
+    cursor: pointer;
+  }
+
+  .viewport {
+    height: 150px;
+    width: 1200px;
+    margin-left: 10px;
+    border: 1px solid black;
+  }
+  
+  .example-item {
+    height: 50px;
+  }
+  
+  .buttons {
+    width: 40%;
+    height: 40px;
+    background: #0ea573;
+    border: none;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: inline-block;
+    margin-left: 210px;
+  }
+  .contenedor-botones {
+    width: 550px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
