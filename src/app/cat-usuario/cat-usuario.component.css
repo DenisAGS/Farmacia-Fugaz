@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+	font-size: 56px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: #1277bb;
+	border: 5px solid #141414;
+	padding: 20px 10px;
+	display:inline-block;
+  text-align:center;
+	margin-left: 280px;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+}
+
+.contenedor {
+	width: 1200px;
+	margin: auto;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedor-botones {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+}
+
+.image--cover {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center right;
+  }
+  .users {
+    text-decoration: none;
+    color: #374457;
+	font-size: 17px;
+    font-weight: bold;
+    /* opcional: inline-block para que las cards vayan una al lado de la otra */
+    display: block;
+  }
+  /* alinear la foto y la info */
+  .image--cover,
+  .user-info {
+    vertical-align: middle;
+  }
+  /* mismo margin que la foto, inline-block para que quede a continuación */
+  .user-info {
+    display: inline-block;
+	margin: 20px 0;
+    padding: 0;
+  }
+  /* los span van block para quedar uno arriba del otro */
+  .user-info>span {
+    display: block;
+  }
+
+  table {
+    width: 100%;
+  } 
+
+  .pointer{
+    cursor: pointer;
+  }
+
+  .viewport {
+    height: 200px;
+    width: 1200px;
+    margin-left: 10px;
+    border: 1px solid black;
+  }
+  
+  .example-item {
+    height: 50px;
+  }
+  
+  .buttons {
+    width: 40%;
+    height: 40px;
+    background: #0ea573;
+    border: none;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: inline-block;
+    margin-left: 210px;
+  }
+
+  .buttonCancelar {
+    width: 40%;
+    height: 40px;
+    background: #c23b5c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: inline-block;
+    margin-left: 80px;
+  }
+
+  .boton1{
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: none;
+	margin-right: 1250px;
+    background: #f2f2f2;
+}
+  
+  .btn-agregar {
+    width: 40%;
+    height: 40px;
+    background: #0ea573;
+    border: none;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: inline-block;
+  }
+  .contenedor-botones {
+    width: 550px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }

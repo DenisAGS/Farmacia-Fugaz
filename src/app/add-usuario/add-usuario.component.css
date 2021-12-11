@@ -3,6 +3,19 @@
     padding: 0;
 }
 
+h1 {
+	font-size: 56px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: #1277bb;
+	border: 5px solid #141414;
+	padding: 20px 10px;
+	display:inline-block;
+  text-align:center;
+	margin-left: 300px;
+}
+
 body {
 	background: #f2f2f2;
 	font-family: 'Roboto', sans-serif;
@@ -12,29 +25,12 @@ body {
 .contenedor {
 	width: 1200px;
 	margin: auto;
+	padding: 20px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-
-.form-noti {
-    width: 420px;
-    height: 170px;
-    background: #4e4d4d;
-    margin: auto;
-    margin-top: 40px;
-    box-shadow: 7px 13px 37px #000;
-    padding: 20px 30px;
-    color: white;
-    border-radius: 40px;
-    
-  }
-
-  .label-dis{
-      font-size:30px;
-      margin-left: 60px;
-  }
 
 .contenedor-botones {
 	width: 100%;
@@ -43,61 +39,28 @@ body {
 	gap: 40px;
 }
 
+.buttonCancelar {
+    width: 40%;
+    height: 40px;
+    background: #c23b5c;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+    display: grid;
+    cursor: pointer;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: inline-block;
+    margin-left: 86px;
+  }
+
 .boton1{
 	display: block;
 	width: 50px;
 	height: 50px;
 	border: none;
 	margin-right: 1250px;
-    background: #f2f2f2;
-}
-
-
-.buttons {
-    width: 280%;
-    height: 45px;
-    background: #0ea573;
-    border: none;
-    color: white;
-    display: grid;
-    font-size: larger;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    display: inline-block;
-    border-radius: 10px;
-    margin-left: 60px;
-  }
-
-
-  .form-noti h5 {
-    margin: 0;
-    text-align: center;
-    height: 40px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid;
-    font-size: 30px;
-  }
-.boton span {
-	position: relative;
-	z-index: 2;
-	transition: .3s ease all;
-}
-
-.boton.page-administrador::after {
-	content: "";
-	width: 100%;
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: calc(-100% - 80px);
-	border-bottom: 80px solid #000000;
-	border-right: 80px solid transparent;
-	transition: .4s ease-in-out all;
-}
-
-.boton.page-administrador:hover::after {
-	left: 0;
 }
 
 .image--cover {
@@ -129,4 +92,42 @@ body {
   /* los span van block para quedar uno arriba del otro */
   .user-info>span {
     display: block;
+  }
+
+  table {
+    width: 100%;
+  } 
+
+  .pointer{
+    cursor: pointer;
+  }
+
+  .viewport {
+    height: 150px;
+    width: 1200px;
+    margin-left: 10px;
+    border: 1px solid black;
+  }
+  
+  .example-item {
+    height: 50px;
+  }
+  
+  .buttons {
+    width: 40%;
+    height: 40px;
+    background: #0ea573;
+    border: none;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: inline-block;
+    margin-left: 210px;
+  }
+  .contenedor-botones {
+    width: 550px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }

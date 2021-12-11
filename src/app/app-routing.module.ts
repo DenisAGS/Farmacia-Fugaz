@@ -21,6 +21,9 @@ import { GestionUsuarioComponent } from './gestion-usuario/gestion-usuario.compo
 import { RolUsuarioComponent } from './rol-usuario/rol-usuario.component';
 import { AddRolComponent } from './add-rol/add-rol.component';
 import { NotiRolComponent } from './noti-rol/noti-rol.component';
+import { NotiAddUsuarioComponent } from './noti-add-usuario/noti-add-usuario.component';
+import { CatUsuarioComponent } from './cat-usuario/cat-usuario.component';
+import { AddUsuarioComponent } from './add-usuario/add-usuario.component';
 
 const routes: Routes = [
   {
@@ -94,6 +97,18 @@ const routes: Routes = [
   {
     path: 'notirol',
     component: NotiRolComponent
+  },
+  {
+    path: 'notiaddusuario',
+    component: NotiAddUsuarioComponent
+  },
+  {
+    path: 'catusuario',
+    component: CatUsuarioComponent
+  },
+  {
+    path: 'addusuario',
+    component: AddUsuarioComponent
   }
 ];
 

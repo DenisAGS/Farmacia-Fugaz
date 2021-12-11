@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add-usuario.component.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+    <title>Farmacia</title>
+</head>
+<body>
+    <div class="contenedor">
+        <button class="boton1" style="margin-right: 1120px;">
+            <a [routerLink]= "['/rolusuario']">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16">
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                </svg>
+            </a>
+        </button>
+        <a class="users">
+            <h1 class="center">
+                Agregar usuarios
+            </h1>
+            <img class="image--cover img-responsive" src="../../assets/imagenes/usuario.png" width="50" height="50" style="margin-left: 90px;">
+            <p class="user-info" style="margin-left: 10px;">
+                <span class="header-username">Adminisrador</span>
+                <a [routerLink]= "['/login']" style="font-weight: 100;">Cerrar sesion</a>
+            </p>
+        </a>
+    </div>
+    <br>
+    <form class="form-pass">
+        <div style="display:block;">
+            <label style="margin-left: 260px; font-size: 30px;"> Rol de usuario:</label>
+            <input style="width: 300px; height: 30px; margin-left: 48px;" class="controls" type="text" name="rol" value=""ngModel required="required" minlength="6" maxlength="10">
+        </div>
+        <br>
+        <div style="display:block;">
+          <label style="margin-left: 230px; font-size: 30px;">Nombre de usuario:</label>
+          <input style="width: 300px; height: 30px; margin-left: 14px;" class="controls" type="text" name="nombre" value="" ngModel required="required" maxlength="10" minlength="6">
+        </div>
+        <br>
+        <div style="display:block;">
+          <label style="margin-left: 240px; font-size: 30px;">Correo electronico:</label>
+          <input style="width: 350px; height: 30px; margin-left: 14px;" class="controls" type="text" name="correo" value="" ngModel required="required" maxlength="20" minlength="10">
+        </div>
+        <br>
+        <div style="display:block;">
+          <label style="margin-left: 210px; font-size: 30px;">Direccion de usuario:</label>
+          <input style="width: 380px; height: 30px; margin-left: 14px;" class="controls" type="text" name="direccion" value="" ngModel required="required" maxlength="20" minlength="10">
+        </div>
+        <br><br><br>
+        
+        <div class="contenedor-botones" style="margin-left: 250px;">
+            <button id="aceptar" [routerLink]= "['/notiaddusuario']" class="buttons">
+              <span>Aceptar</span>   
+            </button>
+            <button id="cancelar" [routerLink]= "['/catusuario']" class="buttonCancelar">
+              <span>Cancelar</span>
+            </button>
+        </div>
+      </form>
+</body>
+</html>
