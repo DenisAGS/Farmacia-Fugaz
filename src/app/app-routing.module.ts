@@ -27,6 +27,7 @@ import { AddUsuarioComponent } from './add-usuario/add-usuario.component';
 import { DecisionUserComponent } from './decision-user/decision-user.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { RegistroComponent } from './registro/registro.component';
+import { NotiRegistroComponent } from './noti-registro/noti-registro.component';
 
 const routes: Routes = [
   {
@@ -120,6 +121,10 @@ const routes: Routes = [
   {
     path: 'registro',
     component: RegistroComponent
+  },
+  {
+    path: 'notiregistro',
+    component: NotiRegistroComponent
   }
 ];
 
