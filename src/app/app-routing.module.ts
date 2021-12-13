@@ -25,6 +25,8 @@ import { NotiAddUsuarioComponent } from './noti-add-usuario/noti-add-usuario.com
 import { CatUsuarioComponent } from './cat-usuario/cat-usuario.component';
 import { AddUsuarioComponent } from './add-usuario/add-usuario.component';
 import { DecisionUserComponent } from './decision-user/decision-user.component';
+import { CategoriaComponent } from './categoria/categoria.component';
+import { RegistroComponent } from './registro/registro.component';
 
 const routes: Routes = [
   {
@@ -110,6 +112,14 @@ const routes: Routes = [
   {
     path: 'addusuario',
     component: AddUsuarioComponent
+  },
+  {
+    path: 'categoria',
+    component: CategoriaComponent
+  },
+  {
+    path: 'registro',
+    component: RegistroComponent
   }
 ];
 

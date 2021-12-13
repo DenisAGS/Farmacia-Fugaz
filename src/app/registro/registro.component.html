@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.component.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+    <title>Farmacia</title>
+</head>
+<body>
+    <div class="contenedor">
+        <a class="users">
+            <img src="../../assets/imagenes/farmacia.png" width="70" height="70" style="margin-right: 350px;">
+            <h1 class="center">
+                Registro productos
+            </h1>
+            <img class="image--cover img-responsive" src="../../assets/imagenes/usuario.png" width="50" height="50" style="margin-left: 90px;">
+            <p class="user-info" style="margin-left: 10px;">
+                <span class="header-username">Adminisrador</span>
+                <a [routerLink]= "['/login']" style="font-weight: 100;">Cerrar sesion</a>
+            </p>
+        </a>
+    </div>
+    <br>
+    <form class="form-pass">
+        <div style="display:block;">
+            <label style="margin-left: 350px; font-size: 30px;"> Clave:</label>
+            <input style="width: 300px; height: 30px; margin-left: 48px;" class="controls" type="text" name="rol" value=""ngModel required="required" minlength="6" maxlength="10">
+        </div>
+        <br>
+        <div style="display:block;">
+          <label style="margin-left: 300px; font-size: 30px;">Descripcion:</label>
+          <input style="width: 300px; height: 30px; margin-left: 14px;" class="controls" type="text" name="nombre" value="" ngModel required="required" maxlength="10" minlength="6">
+        </div>
+        <br>
+        <div style="display:block;">
+          <label style="margin-left: 240px; font-size: 30px;">Codigo de barra:</label>
+          <input style="width: 350px; height: 30px; margin-left: 14px;" class="controls" type="text" name="correo" value="" ngModel required="required" maxlength="20" minlength="10">
+        </div>
+        <br>
+        <div style="display:block;">
+          <label style="margin-left: 360px; font-size: 30px;">Unidad:</label>
+          <input style="width: 380px; height: 30px; margin-left: 14px;" class="controls" type="number" name="direccion" value="" ngModel required="required" min="1">
+          <label style="margin-left: 40px; font-size: 30px;">Piezas</label>
+        </div><br>
+        <div style="display:block;">
+            <label style="margin-left: 370px; font-size: 30px;">Precio:</label>
+            <input style="width: 380px; height: 30px; margin-left: 14px;" class="controls" type="number" name="direccion" value="" ngModel required="required" min="1">
+          </div>
+        <br>
+        
+        <div class="contenedor-botones" style="margin-left: 250px;">
+            <button id="aceptar" [routerLink]= "['/notiaddusuario']" class="buttons">
+              <span>Aceptar</span>   
+            </button>
+            <button id="cancelar" [routerLink]= "['/catbase']" class="buttonCancelar">
+              <span>Cancelar</span>
+            </button>
+        </div>
+      </form>
+</body>
+</html>

@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cat-base.component.css">
+    <link rel="stylesheet" href="categoria.component.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
     <title>Farmacia</title>
 </head>
-
 <body>
     <div class="contenedor">
         <button class="boton1" style="margin-right: 1120px;">
-            <a [routerLink]= "['/pageadministrador']">
+            <a [routerLink]= "['/catbase']">
                 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16">
                     <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
                 </svg>
@@ -22,7 +21,7 @@
         </button>
         <a class="users">
             <h1 class="center">
-                Catalogo base
+                Categoria
             </h1>
             <img class="image--cover img-responsive" src="../../assets/imagenes/usuario.png" width="50" height="50" style="margin-left: 100px;">
             <p class="user-info" style="margin-left: 10px;">
@@ -30,29 +29,23 @@
                 <a [routerLink]= "['/login']" style="font-weight: 100;">Cerrar sesion</a>
             </p>
         </a>
-    </div><br>
-    <img src="../../assets/imagenes/Categoria.png" width="85" height="85" style="margin-left: 240px;">
-    <img src="../../assets/imagenes/informaion de producto.png" width="85" height="85" style="margin-left: 550px;">
-    <br>
-    <div class="contenedor-botones">
-        <a style="text-decoration: none;">
-            <button class="boton page-administrador" [routerLink]= "['/categoria']" style="margin-left: 100px;">
-                <span>Categoria</span>
-            </button>
-        </a>
-        <a style="text-decoration: none;">
-            <button class="boton page-administrador" [routerLink]= "['/catproductos']" style="margin-left: 300px;">
-                <span>Informacion de productos</span>
-            </button>
-        </a>
-    </div><br>
-    <img src="../../assets/imagenes/nuevo producto.png" width="85" height="85" style="margin-left: 550px;">
-    <div class="contenedor-botones">
-        <a style="text-decoration: none;">
-            <button class="boton page-administrador" [routerLink]= "['/registro']" style="margin-left: 360px;">
-                <span>Registro producto</span>
-            </button>
-        </a>
-    </div>
+    </div><br><br>
+      <cdk-virtual-scroll-viewport appendOnly itemSize="50" class="viewport">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+          
+            <ng-container matColumnDef="tipo">
+              <th mat-header-cell *matHeaderCellDef> Tipo </th>
+              <td mat-cell *matCellDef="let element"> {{element.tipo}} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="descripcion">
+              <th mat-header-cell *matHeaderCellDef> Descripcion </th>
+              <td mat-cell *matCellDef="let element"> {{element.descripcion}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>     
+          </table>
+      </cdk-virtual-scroll-viewport>
 </body>
 </html>

@@ -37,6 +37,9 @@ import { NotiAddUsuarioComponent } from './noti-add-usuario/noti-add-usuario.com
 import { CatUsuarioComponent } from './cat-usuario/cat-usuario.component';
 import { AddUsuarioComponent } from './add-usuario/add-usuario.component';
 import { DecisionUserComponent } from './decision-user/decision-user.component';
+import { CategoriaComponent } from './categoria/categoria.component';
+import { RegistroComponent } from './registro/registro.component';
+import { NotiRegistroComponent } from './noti-registro/noti-registro.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +64,10 @@ import { DecisionUserComponent } from './decision-user/decision-user.component';
     NotiAddUsuarioComponent,
     CatUsuarioComponent,
     AddUsuarioComponent,
-    DecisionUserComponent
+    DecisionUserComponent,
+    CategoriaComponent,
+    RegistroComponent,
+    NotiRegistroComponent
   ],
   imports: [
     BrowserModule,
